@@ -20,10 +20,16 @@
   <div class="text-center light-padded">
     <h2>Gardons contact...</h2>
     <p>Recevez nos invitations en avant première!</p>
-    <form action="" class="form-inline">
-      <input type="email" class="form-control" placeholder="adresse@email.com">
-      <input type="submit" value="Envoyer" class="btn btn-send">
-    </form>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+         <%= form_tag subscriber_path, class:"form-group form-inline" do %>
+            <%= email_field_tag :email, nil, { placeholder: 'contact@email.com', class: 'form-control' } %>
+            <%= submit_tag "Me tenir informé", { class: 'btn btn-primary' }%>
+          <% end %>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

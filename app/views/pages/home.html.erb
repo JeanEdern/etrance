@@ -23,9 +23,9 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-4 col-sm-offset-4">
-         <%= form_tag subscriber_path, class:"form-group form-inline" do %>
+         <%= form_tag subscriber_path, { class: 'form-group form-inline' } do %>
             <%= email_field_tag :email, nil, { placeholder: 'contact@email.com', class: 'form-control' } %>
-            <%= submit_tag "Me tenir informé", { class: 'btn btn-primary' }%>
+            <%= submit_tag "Envoyer", { class: 'btn btn-primary' }%>
           <% end %>
         </div>
       </div>

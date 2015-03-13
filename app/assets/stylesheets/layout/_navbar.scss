@@ -1,8 +1,8 @@
 /* -------------------------------------
  * Colors & Fonts
  * ------------------------------------- */
-$navbar-color: $gray-light;
-$navbar-hover-color: $yellow;
+$navbar-color: white;
+$navbar-hover-color: $red;
 $navbar-font-family: $navbar-font;
 $navbar-font-size: 14px;
 $navbar-text-transform: capitalize;
@@ -14,7 +14,7 @@ $navbar-bg: black;
 /* -------------------------------------
  * Box model
  * ------------------------------------- */
-$navbar-height: 50px;
+$navbar-height: 62px;
 $navbar-vertical-padding: 10px;
 $navbar-horizontal-padding: 20px;
 $navbar-border-bottom-width: 1px;
@@ -49,11 +49,13 @@ $navbar-profile-border-width: 2px;
   letter-spacing: $navbar-letter-spacing;
   padding-left: $navbar-horizontal-padding;
   padding-right: $navbar-horizontal-padding;
+  margin-bottom: -2px;
   border-bottom: $navbar-border-bottom-width solid $navbar-border-bottom-color;
   min-height: 0;
   transition: background 0.4s ease;
 
   .navbar-nav > li > a,
+  .navbar-nav > li > p,
   .navbar-nav > .open > a,
   .navbar-nav > li > a:focus,
   .navbar-nav > .open > a:focus {
@@ -66,6 +68,7 @@ $navbar-profile-border-width: 2px;
   }
 
   .navbar-nav > li > a:hover,
+  .navbar-nav > li > p:hover,
   .navbar-nav > .open > a:hover {
     color: $navbar-hover-color;
     background-color: transparent;
@@ -87,14 +90,14 @@ $navbar-profile-border-width: 2px;
     margin-top: ($navbar-height + 2 * $navbar-vertical-padding - $navbar-btn-height) / 2;
     font-weight: bold;
     background-color: $navbar-btn-bg;
-    font-size: 12px;
+    font-size: 16px;
     &:hover{
       background-color: darken($navbar-btn-bg, 30%);
     }
   }
 
   .navbar-brand img, .navbar-brand svg {
-    height: $navbar-height;
+    height: 68px;
     padding: 0px;
   }
 

@@ -1,0 +1,59 @@
+#banner {
+  background-image: image-url('background_et_rance.jpg');
+  padding: 150px 80px;
+  color: white;
+  background-size: cover;
+  position: relative;
+}
+
+#card-brand {
+  width: 500px;
+  padding: 20px;
+  color: #FFF;
+  background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.2);
+}
+
+
+#banner h1 {
+  font-size: 40px;
+  font-family: $brand-font;
+}
+
+#banner p {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+#banner .btn {
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #FFF;
+    line-height: 1;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    &:hover {
+      color: $red;
+    }
+}
+
+.link_down a i{
+  font-size: 50px;
+  bottom: 0;
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  margin-left: -25px;
+}
+
+
+#subscribe {
+  background-color:#FFF3E1;
+  h2 {
+    font-family: $brand-font;
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
